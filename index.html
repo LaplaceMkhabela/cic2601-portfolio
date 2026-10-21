@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sthandiwe Mbokazi – Digital Teaching Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Ccircle cx='5' cy='5' r='5' fill='%23f0a500'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--alt:#eceef2;--ink:#14213d;--mut:#586178;--line:#d9dde5;--gold:#f0a500;--brown:#8a5a00;--red:#ff3b20;--teal:#84d8d8;--pri:#0f3b6f;--btn:#0f3b6f;--hd:#0f3b6f;--g:#dde8c3;--y:#f3dba5;--o:#f8d2a8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171c;--card:#1e232b;--alt:#262c36;--ink:#eef1f6;--mut:#aab2c0;--line:#343b47;--brown:#f0a500;--pri:#8fbaf3;--btn:#2a5fa8;--hd:#0b1f3a;--g:#3a4528;--y:#4d3f1b;--o:#52371c}}
+:root[data-theme="dark"]{--bg:#14171c;--card:#1e232b;--alt:#262c36;--ink:#eef1f6;--mut:#aab2c0;--line:#343b47;--brown:#f0a500;--pri:#8fbaf3;--btn:#2a5fa8;--hd:#0b1f3a;--g:#3a4528;--y:#4d3f1b;--o:#52371c}
+*{box-sizing:border-box}html{scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.65 'Work Sans',system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hd);z-index:30}
+body>header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hd);color:#fff;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 24px;padding:10px 5vw;border-bottom:3px solid var(--gold)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:#fff;text-decoration:none}.brand span{font-weight:300;font-size:14px;opacity:.85}
+.dot{width:20px;height:20px;border-radius:50%;background:var(--gold);display:block}
+nav{display:flex;flex-wrap:wrap;gap:2px}nav a{padding:6px 14px;color:#fff;text-decoration:none;font-size:14px;border-radius:6px;opacity:.88}nav a:hover{background:#ffffff22;opacity:1}nav a.on{background:var(--gold);color:#111;font-weight:600;opacity:1}
+main{max-width:1000px;margin:0 auto;padding:36px 5vw 56px}
+.pg{display:none}.pg.on{display:block}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.12;margin:0 0 10px;font-weight:800;color:var(--pri)}h2{font-size:21px;margin:34px 0 10px;color:var(--pri)}h3{font-size:16px;margin:0 0 8px}h4{font-size:15px;margin:14px 0 6px}
+p{margin:0 0 12px}.mut{color:var(--mut);font-size:14px}a{color:var(--pri)}
+.ph{border-bottom:3px solid var(--gold);padding-bottom:18px;margin-bottom:26px}.ph p{margin:0;max-width:720px;color:var(--mut)}
+.eb{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--alt);color:var(--pri);padding:3px 12px;border-radius:99px;margin-bottom:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:0 0 18px}.card>h2:first-child,.card>h3:first-child{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}.grid>.card{margin:0}
+.band{background:var(--alt);border-radius:12px;padding:22px 24px;margin:26px 0}.band h2{margin-top:0}
+ul,ol{padding-left:22px;margin:0 0 10px}li{margin:3px 0}ul ul{list-style:circle}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tabs button{font:inherit;font-size:14px;font-weight:500;padding:8px 16px;border:1px solid var(--pri);background:none;color:var(--pri);border-radius:99px;cursor:pointer}.tabs button.on{background:var(--gold);border-color:var(--gold);color:#111;font-weight:600}
+.hero{display:flex;flex-wrap:wrap;gap:32px;align-items:center;margin-bottom:10px}
+.av{position:relative;flex:none;width:190px;height:190px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--red));border:6px solid var(--card);box-shadow:0 2px 14px #0003;display:grid;place-items:center;font-size:64px;font-weight:800;color:#fff;overflow:hidden}.av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero>div:last-child{flex:1 1 320px}.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:6px 24px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:12px 0 16px;font-size:14px}.info b{color:var(--ink)}.info span{color:var(--mut)}
+.pills{display:flex;gap:12px}.pills i{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font:700 13px 'Work Sans',sans-serif;font-style:normal;color:#fff}
+.ban{border-left:8px solid var(--gold);background:var(--card);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 24px;margin-bottom:18px;border-radius:0 12px 12px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+.ban h2{margin:6px 0}.chip{display:inline-block;font-size:12px;font-weight:600;padding:2px 12px;border-radius:99px;background:var(--gold);color:#111}
+.dur{text-align:center;background:var(--alt);border-radius:10px;padding:8px 18px}.dur b{font-size:20px;display:block}
+.tw{overflow-x:auto;margin-bottom:18px;border-radius:12px;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)}
+th,td{padding:10px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--alt);color:var(--pri)}.tw table{border:0}
+.qa{background:var(--alt);border-radius:10px;padding:10px 14px;margin-bottom:8px;font-size:14px}.qa p{margin:0}.qa .a{color:var(--brown);margin-top:3px}
+.kwl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:14px 0}.kwl div{padding:14px 16px;border-radius:6px;min-height:110px;box-shadow:2px 3px 8px #0002;font-size:14px;color:var(--ink)}
+.tool{font-size:13px;font-weight:600;color:var(--brown);margin:0}
+.btn{display:inline-block;font:600 14px 'Work Sans',sans-serif;background:var(--btn);color:#fff;padding:10px 20px;border-radius:8px;border:0;text-decoration:none;cursor:pointer}.btn:hover{filter:brightness(1.15)}.btn.o{background:none;color:var(--pri);border:1px solid var(--pri)}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}.docs .btn{text-align:center}
+.n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#111;font-weight:700;display:grid;place-items:center;font-size:14px}
+.it{display:flex;gap:14px;align-items:flex-start}.it h3{margin-bottom:4px}.it p{margin:0;font-size:14px;color:var(--mut)}
+.lab{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--brown);display:block;margin-bottom:4px}
+.ck{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:8px}.ck li{background:var(--alt);border-radius:10px;padding:10px 14px 10px 40px;position:relative;font-size:14px}.ck li::before{content:"✓";position:absolute;left:14px;color:var(--brown);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}.chips span{font-size:13px;background:var(--alt);padding:3px 12px;border-radius:99px}
+.vc{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:center}
+.th{aspect-ratio:16/9;border-radius:10px;background:linear-gradient(135deg,#0f3b6f,#0b1f3a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#fff;border:0;width:100%;cursor:pointer;font:600 14px 'Work Sans',sans-serif;padding:16px;text-align:center}.th b{width:64px;height:64px;border-radius:50%;background:var(--gold);color:#111;display:grid;place-items:center;font-size:26px}
+.ref{border-left:6px solid var(--gold)}.ref .org{font-weight:700;color:var(--pri);margin-bottom:4px}
+.modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:16px;background:#0a142bcc}.modal[hidden]{display:none}
+.mb{background:var(--card);border-radius:14px;width:100%;max-width:820px;max-height:90vh;overflow:auto;padding:22px}.mb h3{font-size:18px;color:var(--pri)}.mb iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;background:#000;display:block}
+footer{background:var(--hd);color:#fff;padding:26px 5vw;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;border-top:3px solid var(--gold)}footer b{display:block}footer div:last-child{opacity:.8}
+@media(max-width:760px){.vc{grid-template-columns:1fr}html{scroll-padding-top:130px}}
+@media print{body>header,footer,.tabs,.noprint{display:none!important}.pg{display:none}.pg.on{display:block}}
+</style></head><body>
+<header><a class="brand" href="#home"><i class="dot"></i>Sthandiwe <span>Educator</span></a>
+<nav id="nav"><a href="#home" data-p="home">Home</a><a href="#lessons" data-p="lessons">Lesson Plans</a><a href="#activities" data-p="activities">Activities</a><a href="#reflection" data-p="reflection">Reflection</a><a href="#video" data-p="video">Video</a><a href="#references" data-p="references">References</a></nav></header>
+<main>
+<section class="pg" id="home">
+<div class="hero"><div class="av">SM<img src="profile.png" alt="Sthandiwe Mbokazi" onerror="this.remove()"></div><div>
+<span class="eb">Welcome to my digital portfolio</span><h1>Hello, I’m Sthandiwe Mbokazi</h1>
+<div class="info"><div><b>Student Name:</b> <span>Sthandiwe Mbokazi</span></div><div><b>Student Number:</b> <span>22773886</span></div><div><b>Module Code:</b> <span>CIC2601</span></div><div><b>Institution:</b> <span>University of South Africa (UNISA)</span></div><div><b>Academic Year:</b> <span>2026</span></div></div>
+<div class="pills"><i style="background:#c98a00">PED</i><i style="background:#e8501a">ICT</i><i style="background:#0f7f86">CAPS</i></div></div></div>
+    <h2>About This Portfolio</h2>
+    <p>This digital portfolio serves as a comprehensive record of my teaching practice and ICT integration skills, developed as part of the CIC2601 module assessment. The portfolio demonstrates my ability to design, implement, and reflect upon ICT-integrated lessons that align with the South African Curriculum and Assessment Policy Statement (CAPS).</p>
+    <p>The portfolio showcases a complete Grade 7 Geography lesson on “Population Growth and Change” (Term 3), incorporating various digital tools and pedagogical strategies to enhance learner engagement and understanding.</p>
+
+    <h2>Purpose of This Portfolio</h2>
+    <ul>
+        <li><b>Demonstrate ICT Competence:</b> Showcase my ability to integrate Information and Communication Technology meaningfully into classroom teaching.</li>
+        <li><b>Document Lesson Design:</b> Present a fully developed CAPS-aligned lesson plan with clear objectives, activities, and assessments.</li>
+        <li><b>Showcase Learning Activities:</b> Provide evidence of ICT-integrated learning activities for each lesson phase.</li>
+        <li><b>Reflect on Practice:</b> Offer critical reflection on the teaching process, including successes, challenges, and areas for improvement.</li>
+        <li><b>Meet Assessment Requirements:</b> Fulfil the requirements of CIC2601 Assignment 2.</li>
+    </ul>
+
+    <div class="band">
+        <h2>My Teaching Philosophy</h2>
+        <p>As an educator, I believe that teaching is not merely the transmission of knowledge but the cultivation of curiosity, critical thinking, and a lifelong love for learning. My teaching philosophy is grounded in the constructivist approach, where learners actively construct meaning through experience, collaboration, and reflection.</p>
+        <p>I am committed to creating an inclusive classroom environment where every learner feels valued and capable of success. I recognise that learners come with diverse backgrounds, abilities, and learning styles, and I strive to differentiate instruction so that these varied needs are met.</p>
+        <p>By integrating Information and Communication Technology (ICT), I aim to make learning relevant, engaging, and accessible to all learners. Technology is not an add-on but a powerful tool that can enhance teaching, learning, and assessment when used thoughtfully and purposefully.</p>
+    </div>
+
+    <h2>ICT Integration Philosophy</h2>
+    <p>I view ICT integration in Geography as an opportunity to transform abstract concepts into tangible learning experiences. I believe in using technology to:</p>
+    <ul>
+        <li>Engage learners through interactive and visually rich content</li>
+        <li>Enable collaboration through digital tools and platforms</li>
+        <li>Enhance understanding through data visualisation and real-world applications</li>
+        <li>Empower learners to become creators, not consumers, of knowledge</li>
+    </ul>
+
+<h2>Portfolio Structure</h2><div class="grid">
+<div class="card"><h3>Home</h3><ul><li>Introduction</li><li>Teaching philosophy</li><li>Portfolio overview</li></ul></div>
+<div class="card"><h3><a href="#lessons">Lesson Plans</a></h3><ul><li>Three complete Grade 7 Social Sciences lesson plans (Geography &amp; History)</li></ul></div>
+<div class="card"><h3><a href="#activities">Activities</a></h3><ul><li>ICT-integrated learning activities for each lesson phase</li><li>Online Safety &amp; Cybersecurity initiative</li></ul></div>
+<div class="card"><h3><a href="#reflection">Reflection</a></h3><ul><li>Teaching reflection on the lesson</li><li>Reflection on the use of Wix</li></ul></div>
+<div class="card"><h3><a href="#video">Video</a></h3><ul><li>Lesson reflection video (SAMR)</li><li>Computer risks, safeguards &amp; ethics</li></ul></div>
+<div class="card"><h3><a href="#references">References</a></h3><ul><li>Sources used for the computer security video</li></ul></div></div>
+</section>
+<!-- LESSONS -->
+<section class="pg" id="lessons">
+    <div class="ph"><span class="eb">CIC2601 Assignment 5</span><h1>Lesson Plans</h1><p>Grade 7 Social Sciences lesson plans: two Geography lessons and one History lesson.</p></div>
+
+    <div class="tabs" id="ltabs">
+        <button data-l="l1">Lesson Plan 1: Geography (ICT)</button>
+        <button data-l="l2">Lesson Plan 2: Geography</button>
+        <button data-l="l3">Lesson Plan 3: History</button>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LESSON PLAN 1: GEOGRAPHY (ICT-ENHANCED)                               -->
+    <!-- ===================================================================== -->
+    <div class="ls" id="l1">
+        <div class="ban">
+            <div>
+                <span class="chip">Lesson Plan 1: Geography (ICT-Enhanced)</span>
+                <h2>Population Growth and Change — Digital Infographic</h2>
+                <p class="mut" style="margin:0">CAPS-aligned lesson using Canva, Google Jamboard and Google Forms to explore population concepts, data interpretation and digital presentation.</p>
+            </div>
+            <div class="dur">Duration<b>60 minutes</b></div>
+        </div>
+
+        <div class="card">
+            <h3>CAPS ALIGNMENT</h3>
+            <p style="margin:0">This lesson aligns with the CAPS curriculum for Grade 7 Geography, Term 3, which focuses on “Population Growth and Change.” The curriculum requires learners to understand key population concepts, interpret population data, and analyse factors influencing population growth.</p>
+        </div>
+
+        <div class="tw">
+            <table>
+                <tr><th colspan="2">Lesson Objectives (Bloom’s Taxonomy)</th></tr>
+                <tr><th style="width:22%">Title</th><th>Lesson Objective</th></tr>
+                <tr><td><b>Remembering</b></td><td>By the end of the lesson, learners will be able to define the key population concepts: population, birth rate, death rate, infant mortality, and population growth rate.</td></tr>
+                <tr><td><b>Understanding</b></td><td>By the end of the lesson, learners will be able to explain the factors that influence birth and death rates, including diseases, healthcare, and economic conditions.</td></tr>
+                <tr><td><b>Applying</b></td><td>By the end of the lesson, learners will be able to analyse population data and create a digital infographic showing population trends using ICT tools (Canva).</td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>RESOURCES NEEDED</h3>
+            <ul>
+                <li>Laptops/tablets with internet access</li>
+                <li>Interactive whiteboard</li>
+                <li>Google Jamboard access</li>
+                <li>Google Docs / Google Classroom</li>
+                <li>Canva accounts (free)</li>
+                <li>Google Forms</li>
+                <li>YouTube video: “World Population Growth” (2–3 minutes)</li>
+                <li>Research links: Stats SA, World Bank, World Population Review</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>LESSON PHASES</h3>
+            <h4>Introduction Phase (10 minutes)</h4>
+            <ul>
+                <li>The teacher displays a large KWL chart using Google Jamboard.</li>
+                <li>The teacher shows a brief YouTube video (2–3 minutes) on world population growth.</li>
+                <li>The teacher asks: “What do you already know about population? Why do you think populations grow or decline?”</li>
+                <li>Learners contribute ideas to the class KWL chart.</li>
+                <li>Learners complete their own KWL chart on Google Docs.</li>
+                <li>The teacher explains the lesson objectives.</li>
+            </ul>
+            <h4>Development Phase (25 minutes)</h4>
+            <ul>
+                <li>The teacher provides research links and questions.</li>
+                <li>The teacher demonstrates how to use Canva’s infographic templates.</li>
+                <li>Learners work in pairs to research population data for South Africa.</li>
+                <li>Learners create a digital infographic on Canva including:
+                    <ul>
+                        <li>South Africa’s current population</li>
+                        <li>Birth rate and death rate data</li>
+                        <li>Population growth rate</li>
+                        <li>Factors influencing birth/death rates</li>
+                    </ul>
+                </li>
+                <li>The teacher circulates to provide support and guidance.</li>
+            </ul>
+            <h4>Consolidation Phase (10 minutes)</h4>
+            <ul>
+                <li>Learners complete an online quiz on Google Forms.</li>
+                <li>Learners receive immediate feedback on their answers.</li>
+                <li>Learners return to their KWL charts and complete the “L” column.</li>
+                <li>The teacher reviews key concepts and addresses any misconceptions.</li>
+            </ul>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>ASSESSMENT</h3>
+                <ul>
+                    <li><b>Formative:</b> Class participation, infographic quality, quiz results</li>
+                    <li><b>Infographic Rubric:</b> Accuracy of data, clarity of explanations, design quality, use of graphics</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>EXTENSION ACTIVITIES</h3>
+                <ul>
+                    <li>Research population data for multiple countries and compare trends</li>
+                    <li>Investigate the impact of HIV/AIDS on South Africa’s population growth</li>
+                    <li>Create an animated timeline showing world population growth</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LESSON PLAN 2: GEOGRAPHY (ORIGINAL)                                   -->
+    <!-- ===================================================================== -->
+    <div class="ls" id="l2">
+        <div class="ban">
+            <div>
+                <span class="chip">Lesson Plan 2: Geography</span>
+                <h2>Population Growth and Change</h2>
+                <p class="mut" style="margin:0">Meaning of population growth and population change; causes; interpreting population data; effects on community services.</p>
+            </div>
+            <div class="dur">Duration<b>60 minutes</b></div>
+        </div>
+
+        <div class="tw">
+            <table>
+                <tr><th colspan="2">Lesson Metadata &amp; LTSM / Resources</th></tr>
+                <tr><th style="width:26%">Name and student number</th><td>Sthandiwe Mbokazi 22773886</td></tr>
+                <tr><th>Grade</th><td>Grade 7</td></tr>
+                <tr><th>Lesson topic area</th><td>Population growth and change</td></tr>
+                <tr><th>Lesson sub-topic</th><td>Meaning of population growth and population change; causes; interpreting population data; effects on community services.</td></tr>
+                <tr><th>Duration</th><td>60 minutes</td></tr>
+                <tr><th>LTSM/resources (ICT integration)</th><td>
+                    1. Laptop showing a short slide presentation or a simple population graph.<br>
+                    2. Printed copy of the same slides/graph as a low-technology backup.<br>
+                    3. Chalkboard/whiteboard and markers/chalk.<br>
+                    4. Learner worksheet with a simple population table and graph.<br>
+                    5. Textbook and pencils/rulers.<br><br>
+                    <b>ICT integration:</b> use the laptop to display the graph or a short, downloaded educational visual. If internet/projector, display the material on the laptop in small groups or use printed copies.
+                </td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>LESSON AIMS</h3>
+            <p class="mut">By the end of the lesson leaners should be able to:</p>
+            <ol>
+                <li>Define population growth and population change in their own words.</li>
+                <li>Identify at least three factors that can cause population size to change, including births, deaths and migration.</li>
+                <li>Interpret a simple population table or bar graph and identify whether a population is increasing or decreasing.</li>
+                <li>Explain two possible effects of population growth on services such as housing, schools, water, transport or healthcare.</li>
+                <li>Suggest two responsible ways a community or municipality can plan for population change.</li>
+            </ol>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>TEACHING STRATEGY</h3>
+                <p style="margin:0">Learner-centred, inquiry-based learning. Begin with a familiar question about how the local community has changed, then guide learners to use evidence from a table or graph. This strategy connects Geography to learners’ lived experiences and encourages observation, questioning and problem-solving rather than memorising definitions only.</p>
+            </div>
+            <div class="card">
+                <h3>TEACHING METHOD</h3>
+                <p style="margin:0">Question-and-answer discussion combined with explicit explanation and guided graph interpretation. The teacher models how to read the title, labels and values on a graph, then learners practise in pairs. This method is suitable because learners need both clear explanations of key terms and practical opportunities to interpret population information.</p>
+            </div>
+        </div>
+
+        <div class="tw">
+            <table>
+                <tr><th colspan="3">LESSON PHASES</th></tr>
+                <tr><th style="width:16%">Phase/time</th><th>Teacher activities</th><th>Learner activities</th></tr>
+                <tr>
+                    <td><b>Introduction</b><br>(10 minutes)</td>
+                    <td>Display two images or ask learners to imagine the local area several years ago and today. Ask: “Have you noticed more houses, shops, cars or people in our community?” Record responses. Introduce the lesson question: “Why do populations change, and what effects can this have?”</td>
+                    <td>Share observations from their community, listen to classmates and suggest reasons why the number of people may have changed.</td>
+                </tr>
+                <tr>
+                    <td><b>Development</b><br>(35 minutes)</td>
+                    <td>Explain population growth (an increase in the number of people over time) and population change (a change in population size or characteristics). Introduce births, deaths, immigration and emigration. Display a simple example table: Community A 2020: 1,000 people; 2025: 1,250 people. Model how to compare values and describe the change. Discuss effects such as demand for homes, classrooms, water, jobs and clinics, while noting that planning can help communities respond. Give pairs a worksheet with a small table/bar graph and guide them with questions.</td>
+                    <td>Copy key terms, answer oral questions and work in pairs to read the graph/table. Identify whether the population increased or decreased, support answers with figures and discuss possible effects on local services.</td>
+                </tr>
+                <tr>
+                    <td><b>Consolidation</b><br>(15 minutes)</td>
+                    <td>Ask learners to complete a short exit task: define population growth, name two causes of population change, state what the sample data show and suggest one service the community may need to plan for. Review answers and correct misunderstandings.</td>
+                    <td>Complete the exit task independently, share one answer and correct their notes if needed.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>ASSESSMENT DURING THE LESSON</h3>
+            <div class="qa"><p><b>1. What is population growth?</b></p><p class="a"><b>Possible answer:</b> An increase in the number of people in a place over time.</p></div>
+            <div class="qa"><p><b>2. Name two factors that change population size.</b></p><p class="a"><b>Possible answer:</b> Births and deaths; immigration and emigration are also correct.</p></div>
+            <div class="qa"><p><b>3. The example population increased from 1,000 in 2020 to 1,250 in 2025. Did it grow or decline?</b></p><p class="a"><b>Possible answer:</b> It grew.</p></div>
+            <div class="qa"><p><b>4. Name one service that may experience greater demand when a community grows.</b></p><p class="a"><b>Possible answer:</b> Schools, housing, water, transport or healthcare.</p></div>
+            <div class="qa"><p><b>5. Why should local authorities understand population change?</b></p><p class="a"><b>Possible answer:</b> To plan services and resources for the community.</p></div>
+            <p class="mut" style="margin:10px 0 0"><b>Assessment evidence:</b> oral responses, pair worksheet and individual exit task.</p>
+        </div>
+
+        <div class="card">
+            <h3>HOMEWORK (connected to real life)</h3>
+            <ol>
+                <li>Ask a family member or trusted community member how the local area has changed over the past five to ten years.</li>
+                <li>Write down two changes they describe (for example, new houses, more people or new services).</li>
+                <li>Suggest one possible reason for these changes, making clear if it is your own suggestion rather than a confirmed fact.</li>
+                <li>Identify one local service that may need to grow or improve if the population increases.</li>
+                <li>Write a short paragraph (5-7 sentences) explaining why understanding population growth and change matters to your community. Do not collect anyone’s private information.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h3>REFLECTION (complete after presenting the lesson)</h3>
+            <div class="grid">
+                <div class="qa"><p><b>What went well?</b></p><p>I explained population growth using examples that learners could relate to, such as the number of people living in their communities. Pictures and questions helped learners understand the topic. Some learners participated actively by sharing their ideas.</p></div>
+                <div class="qa"><p><b>What challenges did I experience?</b></p><p>Some learners struggled to understand the difference between birth rates, death rates and population growth. I also noticed that some learners were shy to answer questions.</p></div>
+                <div class="qa"><p><b>What could I improve?</b></p><p>I could use more diagrams, pictures and simple examples to explain population growth. I would also give learners more opportunities to discuss answers in pairs before sharing them with the class.</p></div>
+                <div class="qa"><p><b>What did I learn?</b></p><p>I learned that Geography becomes easier to understand when I connect the content to learners’ everyday experiences. I also learned that I need to check learners’ understanding throughout the lesson.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LESSON PLAN 3: HISTORY                                               -->
+    <!-- ===================================================================== -->
+    <div class="ls" id="l3">
+        <div class="ban">
+            <div>
+                <span class="chip">Lesson Plan 3: History</span>
+                <h2>The colonisation of the Cape in the 17th and 18th centuries</h2>
+                <p class="mut" style="margin:0">The arrival of the Dutch East India Company in 1652, reasons for the refreshment station, expansion of settlement and effects on the Khoikhoi and San.</p>
+            </div>
+            <div class="dur">Duration<b>60 minutes</b></div>
+        </div>
+
+        <div class="tw">
+            <table>
+                <tr><th colspan="2">Lesson Metadata &amp; LTSM / Resources</th></tr>
+                <tr><th style="width:26%">Name and student number</th><td>Sthandiwe Mbokazi 22773886</td></tr>
+                <tr><th>Grade</th><td>Grade 7</td></tr>
+                <tr><th>Lesson topic area</th><td>The colonisation of the Cape in the 17th and 18th centuries</td></tr>
+                <tr><th>Lesson sub-topic</th><td>The arrival of the Dutch East India Company in 1652, reasons for the refreshment station, expansion of settlement and effects on the Khoikhoi and San.</td></tr>
+                <tr><th>Duration</th><td>60 minutes</td></tr>
+                <tr><th>LTSM/resources (ICT integration)</th><td>
+                    1. Laptop showing a map of the Cape and a short timeline or source images.<br>
+                    2. Printed map/timeline and image<br>
+                    3. Chalkboard/whiteboard and markers/chalk.<br>
+                    4. Learner worksheet with timeline events and source questions.<br>
+                    5. Grade 7 Social Sciences textbook<br>
+                    Projector.<br><br>
+                    <b>ICT integration:</b> use a laptop to display the map and historical images.
+                </td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>LESSON AIMS</h3>
+            <p class="mut">At the end of the lesson leaners should be able to:</p>
+            <ol>
+                <li>Define colonisation and identify the Cape as the place where Dutch settlement began in 1652.</li>
+                <li>Place 1652 and selected events of the 17th and 18th centuries in chronological order using a simple timeline.</li>
+                <li>Explain why the Dutch East India Company established a refreshment station at the Cape.</li>
+                <li>Describe at least two ways Dutch colonisation affected the Khoikhoi and San communities.</li>
+                <li>Use a historical source or image to distinguish between a historical fact and a question that needs further evidence.</li>
+            </ol>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>TEACHING STRATEGY</h3>
+                <p style="margin:0">Source based and enquiry learning. Learners examine a map, timeline and selected images, then ask what the sources show and whose perspectives may be represented or missing. This strategy supports historical thinking and avoids presenting colonisation only from the settlers’ point of view.</p>
+            </div>
+            <div class="card">
+                <h3>TEACHING METHOD</h3>
+                <p style="margin:0">Storytelling/teacher explanation supported by guided source analysis, questioning and pair work. The teacher gives the historical context and models how to read a source; learners then sequence events and discuss impacts. This method makes the period understandable while helping learners consider the experiences of the Khoikhoi and San.</p>
+            </div>
+        </div>
+
+        <div class="tw">
+            <table>
+                <tr><th colspan="3">LESSON PHASES</th></tr>
+                <tr><th style="width:16%">Phase/time</th><th>Teacher activities</th><th>Learner activities</th></tr>
+                <tr>
+                    <td><b>Introduction</b><br>(10 minutes)</td>
+                    <td>Show a map locating the Cape at the southern tip of Africa and a picture of Table Bay. Ask learners what they know about the Cape before and after European settlement. Explain that the lesson examines Dutch colonisation during the 17th and 18th centuries and its effects on people already living there.</td>
+                    <td>Locate the Cape on the map, share prior knowledge and ask questions about who lived in the region before Dutch settlement.</td>
+                </tr>
+                <tr>
+                    <td><b>Development</b><br>(35 minutes)</td>
+                    <td>Explain that in 1652 the Dutch East India Company (VOC) established a refreshment station at the Cape to supply ships travelling between Europe and Asia. Use a timeline to place 1652 and later developments in the 17th and 18th centuries. Explain that settlement expanded over time. Discuss effects on Khoikhoi and San communities, including loss of access to land and grazing areas, pressure on livelihoods, unequal power relations, conflict and the spread of diseases. Explain that experiences differed between communities and individuals. Display a source image/map and ask learners what it shows and what it cannot tell us on its own.</td>
+                    <td>Take brief notes, help place events on the timeline, examine the source in pairs and identify at least two effects on Khoikhoi and San communities. Share ideas respectfully and recognise that colonisation affected different groups differently.</td>
+                </tr>
+                <tr>
+                    <td><b>Consolidation</b><br>(15 minutes)</td>
+                    <td>Ask learners to complete a three-part exit ticket: one fact about 1652, one reason the VOC established the station, and one effect of colonisation on indigenous communities. Review answers and correct any confusion between the VOC’s initial purpose and later expansion of settlement.</td>
+                    <td>Complete the exit ticket independently and explain one thing they learned about the effects of colonisation.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>ASSESSMENT DURING THE LESSON</h3>
+            <div class="qa"><p><b>1. What does colonisation mean?</b></p><p class="a"><b>Possible answer:</b> When a country or outside power establishes control or settlements in another area and its people.</p></div>
+            <div class="qa"><p><b>2. In which year did the Dutch East India Company establish a refreshment station at the Cape?</b></p><p class="a"><b>Possible answer:</b> 1652.</p></div>
+            <div class="qa"><p><b>3. Why was the refreshment station established?</b></p><p class="a"><b>Possible answer:</b> To provide fresh food, water and supplies to ships travelling between Europe and Asia.</p></div>
+            <div class="qa"><p><b>4. Name one way colonisation affected the Khoikhoi or San.</b></p><p class="a"><b>Possible answer:</b> They lost access to land or grazing, experienced conflict, or faced disruption to their livelihoods.</p></div>
+            <div class="qa"><p><b>5. Why should historians use maps, images and written sources carefully?</b></p><p class="a"><b>Possible answer:</b> Sources provide evidence but may show only one perspective or leave information out.</p></div>
+            <p class="mut" style="margin:10px 0 0"><b>Assessment evidence:</b> timeline activity, pair discussion and individual exit ticket.</p>
+        </div>
+
+        <div class="card">
+            <h3>HOMEWORK</h3>
+            <ol>
+                <li>Draw a simple timeline with 1652 marked clearly and label it as the year the VOC established a refreshment station at the Cape.</li>
+                <li>Write two sentences explaining why the Cape was useful to ships travelling between Europe and Asia.</li>
+                <li>Write three sentences describing two effects of colonisation on the Khoikhoi and San communities.</li>
+                <li>Ask an adult or consult a reliable textbook about one place name, museum or historical site connected to early Cape history; record the source you used.</li>
+                <li>Write a short paragraph explaining why it is important to learn about the experiences of the people who lived at the Cape before colonisation. Use respectful language and do not copy directly from a source.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h3>REFLECTION</h3>
+            <div class="grid">
+                <div class="qa"><p><b>What went well?</b></p><p>I introduced the topic by explaining the arrival of the Dutch at the Cape. Using pictures and explaining the journey from the Netherlands to the Cape helped learners develop a better understanding of the historical events.</p></div>
+                <div class="qa"><p><b>What challenges did I experience?</b></p><p>Some learners found it difficult to remember the sequence of historical events and understand how colonisation affected the Khoikhoi and San communities. And who the Dutch was.</p></div>
+                <div class="qa"><p><b>What could I improve?</b></p><p>I could use a timeline and a map to show the sequence of events and the journey to the Cape. I would also ask more questions about the effects of colonisation on the indigenous communities.</p></div>
+                <div class="qa"><p><b>What did I learn?</b></p><p>I learned that teaching History requires more than explaining dates and events. Learners also need to understand the experiences of different groups of people and how historical events affected their lives.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ACTIVITIES -->
+<section class="pg" id="activities">
+    <div class="ph"><span class="eb">Innovative Teaching Methodologies</span><h1>Learning Activities</h1><p>ICT-integrated learning activities for each phase of the Grade 7 Geography lesson on Population Growth and Change, plus an Online Safety &amp; Cybersecurity initiative.</p></div>
+
+    <div class="card">
+        <h2 style="margin-top:0">Activity 1: Introduction – Population KWL Chart</h2>
+        <p class="mut">Grade: 7 · Subject: Geography · Duration: 10 minutes</p>
+        <p><b>Instructions:</b></p>
+        <ol>
+            <li>Watch the short YouTube video on world population growth.</li>
+            <li>Look at the class KWL chart displayed on Google Jamboard.</li>
+            <li>Add what you already <b>know</b> about population to the class chart.</li>
+            <li>Write what you <b>want</b> to know about why populations grow or decline.</li>
+            <li>Complete your own KWL chart on Google Docs. Leave the “L” column for the end of the lesson.</li>
+        </ol>
+        <div class="kwl">
+            <div style="background:var(--g)"><b>K – What I KNOW</b><br>1.<br>2.<br>3.</div>
+            <div style="background:var(--o)"><b>W – What I WANT to know</b><br>1.<br>2.<br>3.</div>
+            <div style="background:var(--y)"><b>L – What I LEARNED</b><br>(Complete at the end of the lesson)<br>1.<br>2.</div>
+        </div>
+        <p><b>Discussion Questions:</b></p>
+        <ol>
+            <li>What do you already know about population?</li>
+            <li>Why do you think populations grow or decline?</li>
+            <li>What would you like to find out in today’s lesson?</li>
+        </ol>
+        <p class="tool">ICT Tools: Google Jamboard + YouTube + Google Docs</p>
+    </div>
+
+    <div class="card">
+        <h2 style="margin-top:0">Activity 2: Development – Population Data Investigation &amp; Digital Infographic</h2>
+        <p class="mut">Grade: 7 · Subject: Geography · Duration: 25 minutes · Instructions: work in pairs</p>
+        <h3>Part A: Data Investigation</h3>
+        <p>Use the research links (Stats SA, World Bank, World Population Review) to find the answers below.</p>
+        <ol>
+            <li>What is South Africa’s current population? ____________</li>
+            <li>What is South Africa’s birth rate? ____________</li>
+            <li>What is South Africa’s death rate? ____________</li>
+            <li>What is the population growth rate? ____________</li>
+            <li>Name two factors that influence birth and death rates: ____________</li>
+        </ol>
+        <h3>Part B: Digital Infographic Creation</h3>
+        <p>Using Canva’s infographic templates, create a digital infographic showing South Africa’s population trends. Your infographic must include:</p>
+        <ul>
+            <li>South Africa’s current population</li>
+            <li>Birth rate and death rate data</li>
+            <li>Population growth rate</li>
+            <li>Factors influencing birth and death rates</li>
+            <li>Clear headings, graphics and an attractive design</li>
+        </ul>
+        <p class="tool">ICT Tools: Canva + Stats SA + World Bank</p>
+    </div>
+
+    <div class="card">
+        <h2 style="margin-top:0">Activity 3: Consolidation – Population Quiz &amp; Reflection</h2>
+        <p class="mut">Grade: 7 · Subject: Geography · Duration: 10 minutes</p>
+        <h3>Part C: Online Quiz</h3>
+        <p>Complete the Google Forms quiz and receive immediate feedback on your answers.</p>
+        <div class="grid">
+            <div class="qa"><b>Sample Questions</b><ol><li>What is the meaning of “population”?</li><li>What is a birth rate?</li><li>What is a death rate?</li><li>What is infant mortality?</li><li>Name one factor that influences the death rate.</li><li>What does population growth rate show?</li></ol></div>
+            <div class="qa"><b>Answers</b><ol><li>The number of people living in a place.</li><li>The number of babies born per 1,000 people in a year.</li><li>The number of deaths per 1,000 people in a year.</li><li>The death of babies before their first birthday.</li><li>Disease, healthcare or economic conditions.</li><li>How quickly a population is increasing or decreasing.</li></ol></div>
+        </div>
+        <h3>Part D: KWL Chart Reflection</h3>
+        <p>Return to your KWL chart and complete the “L” column.</p>
+        <p>What I learned today: ______________________</p>
+        <p class="tool">ICT Tools: Google Forms + Google Docs</p>
+    </div>
+
+    <div class="card"><h2>Activity 4: Online Safety &amp; Cybersecurity Initiative</h2>
+<p class="mut">Embedded implementation budget</p><h3>Supporting Documents</h3>
+<p class="mut">Open or download the proposal presentation and the implementation budget below.</p>
+<div class="docs"><a class="btn" href="Online%20Safety%20%26%20Cybersecurity%20Proposal.p.pptx" target="_blank" rel="noopener">Open Proposal (PPTX)</a><a class="btn o" href="Online%20Safety%20%26%20Cybersecurity%20Proposal.p.pptx" download>Download Proposal (PPTX)</a><a class="btn" href="budget%202026.xlsx" target="_blank" rel="noopener">Open Budget (XLSX)</a><a class="btn o" href="budget%202026.xlsx" download>Download Budget (XLSX)</a></div></div>
+</section>
+<section class="pg" id="reflection"><div class="ph"><span class="eb">Lesson: Population Growth and Change · Grade 7 · Geography</span><h1>Reflection</h1><p>A written reflection on the lesson, and a reflection on building this portfolio with Wix.</p></div>
+<div class="tabs" id="rtabs"><button data-r="rt">Teaching Reflection</button><button data-r="rw">Wix Reflection</button></div>
+<div class="rs" id="rt">
+<div class="card"><h2>Introduction</h2><p style="margin:0">This reflection is on the Grade 7 Geography lesson I designed on “Population Growth and Change” for Term 3. The lesson aimed to develop learners’ understanding of population concepts and their ability to analyse and present population data using ICT tools. This reflection examines what worked well, what challenges I faced, areas for improvement, and the impact on my teaching practice.</p></div>
+<h2>What Worked Well</h2><div class="grid"><div class="card it"><span class="n">1</span><div><h3>Engaging Introduction</h3><p>The KWL chart activity using Google Jamboard effectively activated prior knowledge and generated interest in the topic. The YouTube video was engaging and provided a context for the lesson.</p></div></div><div class="card it"><span class="n">2</span><div><h3>ICT Integration</h3><p>The use of Canva for the infographic creation was successful. Learners were able to manage the tools and produced visually appealing infographics that demonstrated their understanding of population concepts. Google Forms quiz provided immediate feedback.</p></div></div><div class="card it"><span class="n">3</span><div><h3>Collaborative Learning</h3><p>Pair work allowed learners to support one another during the research and infographic phases, and learners discussed their findings.</p></div></div><div class="card it"><span class="n">4</span><div><h3>Learner Engagement</h3><p>The majority of learners participated actively in class discussions and completed the infographic activity.</p></div></div><div class="card it"><span class="n">5</span><div><h3>Differentiation</h3><p>The activities catered to different learning styles and abilities, with extension tasks provided for advanced learners and additional support for those who needed it.</p></div></div></div>
+<h2>Challenges Encountered</h2><div class="grid"><div class="card it"><span class="n">1</span><div><h3>Technical Difficulties</h3><p>Some learners experienced Internet connectivity issues, which affected their ability to access and use online tools.</p></div></div><div class="card it"><span class="n">2</span><div><h3>Time Management</h3><p>The 25 minutes allocated for research and infographic creation was not sufficient. Many learners needed more time to complete their infographics with all required details.</p></div></div><div class="card it"><span class="n">3</span><div><h3>Digital Literacy</h3><p>Some learners struggled with Canva, particularly those with limited experience using digital tools. This slowed down their progress.</p></div></div><div class="card it"><span class="n">4</span><div><h3>Data Interpretation</h3><p>Some learners found it challenging to interpret population statistics and connect them to the concepts taught.</p></div></div></div>
+<h2>Areas for Improvement</h2><div class="grid"><div class="card"><span class="lab">Action 01</span><h3>Pre-Lesson Preparation</h3><p class="mut" style="margin:0">Pre-teach the basics of Canva before the lesson and create a template for the infographic to support struggling learners.</p></div><div class="card"><span class="lab">Action 02</span><h3>Time Allocation</h3><p class="mut" style="margin:0">Allocate at least 40 minutes for the development phase to ensure learners have adequate time for research and infographic creation.</p></div><div class="card"><span class="lab">Action 03</span><h3>ICT Resource Preparation</h3><p class="mut" style="margin:0">Prepare printed resources for learners who experience connectivity issues.</p></div><div class="card"><span class="lab">Action 04</span><h3>More Scaffolding</h3><p class="mut" style="margin:0">Provide more scaffolding, such as guiding questions and worked examples, for data interpretation and infographic design.</p></div><div class="card"><span class="lab">Action 05</span><h3>Reach Redefinition</h3><p class="mut" style="margin:0">In future, aim to move towards the Redefinition level of SAMR by having learners publish their infographics or share their population data online with peers.</p></div></div>
+<h2>Impact on My Teaching Practice</h2><p>This lesson has reinforced my commitment to integrating ICT meaningfully in the classroom. I have learned that successful ICT integration requires careful planning, adequate support, and flexibility to address challenges. Moving forward, I will:</p><ul class="ck"><li>Plan thoroughly for ICT-based activities.</li><li>Provide more scaffolding for digital tools.</li><li>Allow more time for ICT-based activities.</li><li>Prepare backup resources for connectivity issues.</li><li>Continue to differentiate instruction to meet diverse learner needs.</li><li>Strive to move beyond substitution towards transformation using the SAMR model.</li></ul>
+<h2>Inclusive Teaching (Differentiation)</h2><p>To accommodate learners with different learning abilities, I implemented the following strategies:</p><div class="grid"><div class="card"><h3>Visual Learners</h3><p class="mut" style="margin:0">The Canva infographic activity and visual presentation aided visual learning styles.</p></div><div class="card"><h3>Kinesthetic Learners</h3><p class="mut" style="margin:0">The hands-on KWL chart creation and infographic creation promoted engagement.</p></div><div class="card"><h3>Auditory Learners</h3><p class="mut" style="margin:0">The video introduction and class discussions supported auditory learning.</p></div><div class="card"><h3>Advanced Learners</h3><p class="mut" style="margin:0">Extension activities, including researching multiple countries and investigating HIV/AIDS impact on population growth.</p></div><div class="card"><h3>Learners Needing Support</h3><p class="mut" style="margin:0">Word banks, sentence starters, a visual glossary and simplified data sets provided additional help.</p></div><div class="card"><h3>Multiple Means</h3><p class="mut" style="margin:0">Learners could demonstrate understanding through graphical, visual and written explanations, or the quiz.</p></div></div>
+<div class="band"><h2>Conclusion</h2><p style="margin:0">Overall, the lesson was successful in achieving its learning objectives and engaging learners. The integration of ICT tools enhanced the learning experience and fostered important 21st-century digital literacy skills. I am committed to continuously improving my teaching practice and using technology to create meaningful and inclusive learning experiences for all learners.</p></div>
+</div>
+<div class="rs" id="rw"><h2 style="margin-top:0">Reflection on the Use of Wix</h2><div class="card"><span class="lab">Question 01</span><h3>What was your first impression of using Wix?</h3><p style="margin:0">My first impression of Wix was that it was a useful platform for creating a website without needing advanced coding skills. At first, I needed time to understand how to arrange the pages, add content and choose suitable designs. As I continued working on my portfolio, I became more comfortable using the platform. I realised that Wix can help teachers present their work in a professional and organised way.</p></div><div class="card"><span class="lab">Question 02</span><h3>Which Wix features did you find most useful and why?</h3><p style="margin:0">I found the page and menu features useful because they allowed me to organise my portfolio into sections such as Home, Lesson Plans, Activities, Reflections, Videos and References. I also found the image and video features useful because they helped me present my teaching activities in a more interesting way. These features made it easier for visitors to find information and understand the purpose of my portfolio.</p></div><div class="card"><span class="lab">Question 03</span><h3>What challenges did you encounter while building your website?</h3><p style="margin:0">One challenge I encountered was organising the content and making sure that each item appeared under the correct page. I also needed to pay attention to the layout, font sizes, colours and placement of images. To address these challenges, I worked on the website step by step and checked the pages after making changes. This taught me that building a website requires patience, planning and attention to detail.</p></div><div class="card"><span class="lab">Question 04</span><h3>How did using Wix improve your web design or digital skills?</h3><p style="margin:0">Using Wix helped me improve my digital skills by teaching me how to create web pages, organise information, add images and videos, and arrange content in a readable format. I also learned the importance of using consistent colours, headings and layouts. These skills have increased my confidence in using technology to present educational information.</p></div><div class="card"><span class="lab">Question 05</span><h3>What would you do differently if you had to redesign your website?</h3><p style="margin:0">If I had to redesign my website, I would plan the structure and content before starting. I would prepare my lesson plans, activities, images and references in advance so that I could organise them more efficiently. I would also make sure that the website uses consistent colours and fonts, that the text is easy to read, and that all links and videos work correctly. I would ask someone to view the website and give feedback before publishing it.</p></div><div class="card"><span class="lab">Question 06</span><h3>How can the skills learned from Wix be applied in your future career?</h3><p style="margin:0">As a future teacher, I can use the skills I learned from Wix to create educational websites and organise learning resources for learners. I could use a website to share lesson materials, instructions, activities and revision resources. These skills can also help me integrate information and communication technology into my teaching. Overall, learning to use Wix has shown me how digital tools can support communication, creativity and teaching.</p></div></div>
+<div class="row noprint"><button class="btn o" onclick="window.print()">Export / Print</button></div>
+</section>
+<section class="pg" id="video"><div class="ph"><span class="eb">Educational Video Showcase</span><h1>Lesson Reflection Videos</h1><p>Exploration of ICT-integrated pedagogy, SAMR technology adoption, classroom digital safeguards, and educational ethics by Sthandiwe Mbokazi (UNISA · CIC2601).</p></div><article class="card"><div class="vc"><div><span class="eb">Teaching Approach · Grade 7 Geography</span><h2 style="margin-top:0">Lesson Reflection Video</h2><p>In this video, I reflect on the ICT-integrated Geography lesson I designed for Grade 7 learners on “Population Growth and Change.” The video covers lesson overview, lesson phases, ICT tools used, SAMR model analysis, teacher and learner roles, reflection on effectiveness, and differentiation strategies for inclusive teaching.</p><span class="lab">Key Topics Covered</span><div class="chips"><span>SAMR Model</span><span>ICT Integration</span><span>Differentiation</span><span>Geography Grade 7</span></div>
+<div class="row"><button class="btn" onclick="pv('Lesson Reflection Video','https://www.youtube.com/embed/-K_vK05Lnn8')">▶ Play Video</button><a class="btn o" href="https://youtu.be/-K_vK05Lnn8" target="_blank" rel="noopener">Watch on YouTube</a></div></div>
+<button class="th" onclick="pv('Lesson Reflection Video','https://www.youtube.com/embed/-K_vK05Lnn8')"><b>▶</b>Lesson Reflection Video<span style="font-weight:400;opacity:.8">My Teaching Approach · Sthandiwe Mbokazi</span></button></div></article><article class="card"><div class="vc"><div><span class="eb">Digital Literacy</span><h2 style="margin-top:0">Computer Risks, Safeguards &amp; Ethics</h2><p>This reflection video covers digital safety in the classroom, exploring cyber risks, data privacy safeguards, digital citizenship, and ethical ICT practices for educators and learners.</p><span class="lab">Key Topics Covered</span><div class="chips"><span>Cyber Safety</span><span>Data Privacy</span><span>ICT Ethics</span><span>Digital Citizenship</span></div>
+<div class="row"><button class="btn" onclick="pv('Computer Risks, Safeguards &amp;amp; Ethics','https://www.youtube.com/embed/_UY-t5CNpTU')">▶ Play Video</button><a class="btn o" href="https://youtu.be/_UY-t5CNpTU" target="_blank" rel="noopener">Watch on YouTube</a><button class="btn o" onclick="tk(true)">Key Takeaways</button><a class="btn o" href="#references">References</a></div></div>
+<button class="th" onclick="pv('Computer Risks, Safeguards &amp;amp; Ethics','https://www.youtube.com/embed/_UY-t5CNpTU')"><b>▶</b>Computer Risks, Safeguards &amp; Ethics<span style="font-weight:400;opacity:.8">Digital Classroom Reflection</span></button></div></article>
+<div class="modal" id="vm" hidden><div class="mb"><h3 id="vt">Video Player</h3><iframe id="vf" title="Video player" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><div class="row"><a class="btn o" id="vl" href="#" target="_blank" rel="noopener">Open on YouTube</a><button class="btn" onclick="cv()">Close Player</button></div></div></div>
+<div class="modal" id="tm" hidden><div class="mb"><h3>Computer Risks, Safeguards &amp; Ethics: Key Takeaways</h3><p class="mut">Key takeaways for educators and learners</p><div class="qa"><p><b>Malware & Phishing Prevention</b></p><p>Implementing firewall controls, keeping antivirus software updated, and educating students on identifying suspicious download links or phishing emails.</p></div><div class="qa"><p><b>Student Data Privacy & POPIA Compliance</b></p><p>Safeguarding learner personal data, secure storage of digital grades, and ensuring consent protocols when using third-party educational tools.</p></div><div class="qa"><p><b>Copyright & Ethical Content Use</b></p><p>Promoting digital honesty, proper citation of internet sources, avoiding academic plagiarism, and using Creative Commons licensed media in lessons.</p></div><div class="qa"><p><b>Cyberbullying & Digital Citizenship</b></p><p>Fostering respectful online communication, establishing clear classroom digital etiquette guidelines, and supporting positive digital footprints.</p></div><div class="row"><button class="btn" onclick="tk(false)">Got it, close</button></div></div></div>
+</section>
+<section class="pg" id="references"><div class="ph"><span class="eb">Sources</span><h1>References</h1><p>References for the video on computer security risks, safeguards and ethics.</p></div><div class="card ref"><div class="org">Cybersecurity and Infrastructure Security Agency (CISA)</div><p style="margin:0">CISA (n.d.) <i>Secure Our World</i>. Available at: <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener">https://www.cisa.gov/secure-our-world</a> (Accessed: 20 October 2026).</p></div><div class="card ref"><div class="org">National Institute of Standards and Technology (NIST)</div><p style="margin:0">NIST (2026) <i>Cybersecurity Basics</i>. Available at: <a href="https://www.nist.gov/itl/smallbusinesscyber/cybersecurity-basics" target="_blank" rel="noopener">https://www.nist.gov/itl/smallbusinesscyber/cybersecurity-basics</a> (Accessed: 20 October 2026).</p></div><div class="card ref"><div class="org">United Nations Educational, Scientific and Cultural Organization (UNESCO)</div><p style="margin:0">UNESCO (2022) <i>Recommendation on the Ethics of Artificial Intelligence</i>. Paris: UNESCO. Available at: UNESCO website (Accessed: 20 October 2026).</p></div><p class="mut">See the <a href="#video">Video</a> tab to watch the Computer Risks, Safeguards &amp; Ethics reflection.</p></section>
+</main>
+<footer><div><b>© 2026</b></div><div><b>UNISA</b>STHANDIWE MBOKAZI</div><div><b>CIC2601</b></div><div>University of South Africa</div></footer>
+<script>
+var P=['home','lessons','activities','reflection','video','references'],L=['l1','l2','l3'],R=['rt','rw'];
+function sw(ids,id,sel){ids.forEach(function(x){document.getElementById(x).style.display=x===id?'block':'none'});document.querySelectorAll(sel+' button').forEach(function(b){b.classList.toggle('on',(b.dataset.l||b.dataset.r)===id)})}
+function go(){var h=(location.hash||'#home').slice(1),p=h;if(L.indexOf(h)>-1){window._l=h;p='lessons'}else if(P.indexOf(h)<0)p='home';
+P.forEach(function(x){document.getElementById(x).classList.toggle('on',x===p)});
+document.querySelectorAll('#nav a').forEach(function(a){a.classList.toggle('on',a.dataset.p===p)});
+sw(L,window._l||'l1','#ltabs');window.scrollTo(0,0)}
+document.querySelectorAll('#ltabs button').forEach(function(b){b.onclick=function(){window._l=b.dataset.l;sw(L,window._l,'#ltabs')}});
+document.querySelectorAll('#rtabs button').forEach(function(b){b.onclick=function(){sw(R,b.dataset.r,'#rtabs')}});
+sw(R,'rt','#rtabs');
+function pv(t,u){document.getElementById('vt').textContent=t.replace(/&amp;/g,'&');document.getElementById('vf').src=u+'?autoplay=1&rel=0';document.getElementById('vl').href=u.replace('/embed/','/watch?v=').replace('www.youtube.com','www.youtube.com');document.getElementById('vm').hidden=false}
+function cv(){document.getElementById('vm').hidden=true;document.getElementById('vf').src='about:blank'}
+function tk(s){document.getElementById('tm').hidden=!s}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){cv();tk(false)}});
+window.addEventListener('hashchange',go);go();
+</script></body></html>
